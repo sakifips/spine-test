@@ -179,7 +179,65 @@ showResults();
 };
 function showResults(){
 
-let html="<h2>Your Scores</h2>";
+const heroFunctions=["Fi","Fe","Ti","Te","Ni","Ne","Si","Se"];
+const animaFunctions=["Fi","Fe","Ti","Te","Ni","Ne","Si","Se"];
+
+let bestHero="";
+let bestHeroScore=-9999;
+
+let bestAnima="";
+let bestAnimaScore=-9999;
+
+heroFunctions.forEach(f=>{
+
+if(scores[f+"H"]>bestHeroScore){
+
+bestHeroScore=scores[f+"H"];
+bestHero=f;
+
+}
+
+});
+
+animaFunctions.forEach(f=>{
+
+if(scores[f+"A"]>bestAnimaScore){
+
+bestAnimaScore=scores[f+"A"];
+bestAnima=f;
+
+}
+
+});
+
+const opposite={
+Fi:"Te",
+Te:"Fi",
+Ti:"Fe",
+Fe:"Ti",
+Ni:"Se",
+Se:"Ni",
+Ne:"Si",
+Si:"Ne"
+};
+
+const consistent=(opposite[bestHero]===bestAnima);
+
+let html=`
+<h2>Your Results</h2>
+
+<p><b>Most likely Hero function:</b> ${bestHero}</p>
+
+<p><b>Most likely Anima/Animus function:</b> ${bestAnima}</p>
+
+<p><b>Consistency:</b>
+${consistent ? "✅ Consistent" : "⚠️ Inconsistent"}
+</p>
+
+<hr>
+
+<h2>Scores</h2>
+`;
 
 for(let key in scores){
 
@@ -190,7 +248,6 @@ html+=`<p>${key}: ${scores[key]}</p>`;
 quiz.innerHTML=html;
 
 document.querySelector(".navigation").style.display="none";
-
 document.querySelector(".progressSection").style.display="none";
 
 }
