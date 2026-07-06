@@ -162,13 +162,13 @@ const answer=answers[q.id];
 
 const option=q.options[answer];
 
-if(option.effects){
+if(option.scores){
 
-option.effects.forEach(effect=>{
+for(const stat in option.scores){
 
-scores[effect.stat]+=effect.value;
+scores[stat]+=option.scores[stat];
 
-});
+}
 
 }
 
@@ -226,17 +226,21 @@ const consistent=(opposite[bestHero]===bestAnima);
 let html=`
 <h2>Your Results</h2>
 
-<p><b>Most likely Hero function:</b> ${bestHero}</p>
+<p>
+It appears that the function attitude most likely associated with the
+<b>Hero</b> archetype is <b>${bestHero}</b>, while the function attitude
+most likely associated with the <b>Anima/Animus</b> archetype is
+<b>${bestAnima}</b>.
+</p>
 
-<p><b>Most likely Anima/Animus function:</b> ${bestAnima}</p>
-
-<p><b>Consistency:</b>
+<p>
+<b>Consistency Check:</b>
 ${consistent ? "✅ Consistent" : "⚠️ Inconsistent"}
 </p>
 
 <hr>
 
-<h2>Scores</h2>
+<h2>Function Scores</h2>
 `;
 
 for(let key in scores){
