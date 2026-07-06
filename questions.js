@@ -363,28 +363,28 @@ text:"What would you feel most hurt by in general?",
 options:[
 
 {
-text:"'You don't even know what you care about. You just pretend to be passionate because you like feeling unique.'",
+text:"'You don't even know what you care about. You just pretend to be passionate about some shit because you like feeling special and unique.'",
 scores:{
 FiA:5
 }
 },
 
 {
-text:"'You are extremely useless and impractical. You are incapable of leading or guiding people properly.'",
+text:"'You are extremely useless and impractical. You are an insecure bigot who is incapable of leading or guiding people properly.'",
 scores:{
 TeA:5
 }
 },
 
 {
-text:"'You don't understand anything. Your reasoning is so shallow that anyone could have produced it.'",
+text:"'You don't understand shit. The reasonings and arguments you make are so banal that any cow could have made those had it been allowed to speak'",
 scores:{
 TiA:5
 }
 },
 
 {
-text:"'Nobody feels helped or heard by anything you do. You just create more problems while believing you're compassionate.'",
+text:"'Nobody feels helped or heard by anything you do. You just create additional problems for everybody while deluding yourself about being compassionate or thoughtful.'",
 scores:{
 FeA:5
 }
@@ -576,7 +576,7 @@ FiH:-5
   {
 id:17,
 
-text:"Imagine somebody is creating a new theory and you are tasked with evaluating whether it deserves to be approved. What matters more to you?",
+text:"Imagine somebody has come up with a new theory or field of study and you are tasked with evaluating whether it deserves to be approved. What matters more to you?",
 
 options:[
 
@@ -724,28 +724,28 @@ text:"What hurts the most or feels most disrespectful?",
 options:[
 
 {
-text:"When someone invalidates my real-life experiences or falsely accuses me of making things up.",
+text:"When someone invalidates my real life experiences or when they falsely accuse me of making up anecdotes which are not being rooted in reality.",
 scores:{
 SiA:5
 }
 },
 
 {
-text:"When someone invalidates my feelings and says it changes their image of me.",
+text:"When someone invalidates my feelings or emotions and claim it has altered their image of me.",
 scores:{
 FiA:5
 }
 },
 
 {
-text:"When someone dismisses my insights or symbolic beliefs as attention-seeking nonsense.",
+text:"When someone invalidates my insights or symbolic beliefs as bullshit and accuse me of doing it for attention.",
 scores:{
 NiA:5
 }
 },
 
 {
-text:"When someone nitpicks my reasoning and dismisses every argument I make.",
+text:"When someone invalidates my internal logic or the way i understand something. And they nitpick every argument I make.",
 scores:{
 TiA:5
 }
@@ -758,35 +758,35 @@ TiA:5
 {
 id:22,
 
-text:"Pick the process that feels most instinctual and requires the least conscious effort. (Google the words if necessary.)",
+text:"Pick the processes that feels most instinctual and requires the least conscious effort. (Please Google the words if necessary.)Here entertaining has two meanings. 1. Interesting and amusing yourself and others. 2. beginning to consider or 'entertain' possibilities that you may want to go on to envision in greater detail.",
 
 options:[
 
 {
-text:"Engaging • Experiencing • Enjoying",
+text:"Engaging, Experiencing, Enjoying",
 scores:{
-SeH:7
+SeH:10
 }
 },
 
 {
-text:"Validating • Affirming • Relating",
+text:"Validating, Affirming,  Relating",
 scores:{
-FeH:7
+FeH:10
 }
 },
 
 {
-text:"Entertaining • Envisioning • Enabling",
+text:"Entertaining, Envisioning, Enabling",
 scores:{
-NeH:7
+NeH:10
 }
 },
 
 {
-text:"Regulating • Planning • Enforcing",
+text:"Regulating, Planning, Enforcing",
 scores:{
-TeH:7
+TeH:10
 }
 }
 
@@ -797,35 +797,35 @@ TeH:7
 {
 id:23,
 
-text:"Pick the process that feels most instinctual and requires the least conscious effort. (Google the words if necessary.)",
+text:"Pick the processes that feels most instinctual and requires the least conscious effort. (Please google the words if necessary.)Like 'entertaining, 'divining' has a double meaning in this scheme. It is not only seeing in what direction the future is bending. It is also descrying the divine purpose hidden in the developing situation.",
 
 options:[
 
 {
-text:"Imagining • Knowing • Divining",
+text:"Imagining, Knowing, Divining",
 scores:{
-NiH:7
+NiH:10
 }
 },
 
 {
-text:"Judging • Appraising • Establishing Value",
+text:"Judging, Appraising, Establishing Value",
 scores:{
-FiH:7
+FiH:10
 }
 },
 
 {
-text:"Naming • Defining • Understanding",
+text:"Naming, Defining, Understanding",
 scores:{
-TiH:7
+TiH:10
 }
 },
 
 {
-text:"Implementing • Verifying • Accounting",
+text:"Implementing, Verifying,  Accounting",
 scores:{
-SiH:7
+SiH:10
 }
 }
 
@@ -836,61 +836,61 @@ SiH:7
 {
 id:24,
 
-text:"What's your biggest insecurity? In other words, what do you secretly hope other people never notice about you? Please read every option carefully.",
+text:"What’s your biggest insecurity ie constant source of shame ie something about you that you secretly wish others won’t ever notice? Please slowly read all of these options TWICE.",
 
 options:[
 
 {
-text:"My inability to discover a satisfying long-term direction or deeper meaning behind my life.",
+text:"My inability to discover a satisfying long-term direction or deeper meaning behind my life.I often fear I’m just drifting without truly knowing what I ultimately want.",
 scores:{
 NiA:7
 }
 },
 
 {
-text:"My inability to stay true to what genuinely matters to me. I worry I don't really know who I am beneath outside influences.",
+text:"My inability to stay true to what genuinely matters to me. I feel shame that I don't really know who I am or what i truly value beneath outside influences.",
 scores:{
 FiA:7
 }
 },
 
 {
-text:"My inability to understand things well enough to completely trust my own reasoning.",
+text:"My inability to understand things well enough to completely trust my own reasoning. I secretly fear that my thinking isn’t as coherent or insightful as I wish it were.",
 scores:{
 TiA:7
 }
 },
 
 {
-text:"My inability to accomplish things effectively or reliably. I worry I lack the competence to turn intentions into results.",
+text:"My inability to accomplish things effectively or reliably. I often worry that I lack the competence and capability to turn intentions into results.",
 scores:{
 TeA:7
 }
 },
 
 {
-text:"The fact that I'm not as attentive or dutiful as I aspire to be.",
+text:"My inability to be as attentive or dutiful as I aspire to be towards certain things. I feel shame that I make enthisiastic promises or i take on some responsibility only to either forget it or slither out of it",
 scores:{
 SiA:7
 }
 },
 
 {
-text:"My inability to create memorable experiences or engage people with the confidence and presence I aspire to.",
+text:"My inability to give people a good time, create memorable experiences, or engage them with the confidence and presence I aspire to.",
 scores:{
 SeA:7
 }
 },
 
 {
-text:"My lack of smoothness in anticipating other people's needs and comforting them the way I wish I could.",
+text:"My lack of smoothness in anticipating other people's needs. I hate how much I struggle to comfort or emotionally support them the way I wish I could.",
 scores:{
 FeA:7
 }
 },
 
 {
-text:"My inability to imagine alternatives or recognize possibilities that seem obvious to other people.",
+text:"My inability to imagine alternatives or recognize possibilities that seem obvious to other people.I worry that my thinking becomes too rigid and narrow or that I may miss opportunities because of not entertaining hypothetical scenarios as much as i should have.",
 scores:{
 NeA:7
 }
