@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Saki's Spine Test</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🦴 Saki's Spine Test</h1>
+
+<p class="subtitle">
+A Beebe-inspired assessment of Hero and Anima function attitudes.
+</p>
+
+<div class="instructions">
+
+<h2>Instructions</h2>
+
+<p>
+This assessment is based on John Beebe's archetypal model of psychological type.
+It is <b>not</b> intended to measure intelligence, morality or competence.
+</p>
+
+<p>
+Choose the answer that feels <b>most instinctive</b>, even if none describes you perfectly.
+Avoid choosing your ideal self.
+</p>
+
+<p>
+Please answer honestly and naturally.
+</p>
+
+</div>
+
+<div id="progressArea">
+
+<div class="progressText">
+
+<span id="currentQuestion">0</span>
+
+/
+
+<span id="totalQuestions">0</span>
+
+</div>
+
+<div class="progressBar">
+
+<div id="progressFill"></div>
+
+</div>
+
+</div>
+
+<div id="quiz"></div>
+
+<div class="buttonArea">
+
+<button id="previousBtn">
+← Previous
+</button>
+
+<button id="nextBtn">
+Next →
+</button>
+
+</div>
+
+<div class="buttonArea">
+
+<button id="submitBtn">
+Calculate Results
+</button>
+
+</div>
+
+<div id="results"></div>
+
+<footer>
+
+Version 1.0
+
+<br>
+
+Developed by Saki
+
+</footer>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
