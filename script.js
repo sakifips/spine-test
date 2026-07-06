@@ -227,9 +227,9 @@ let html=`
 <h2>Your Results</h2>
 
 <p>
-It appears that the function attitude most likely associated with the
-<b>Hero</b> archetype is <b>${bestHero}</b>, while the function attitude
-most likely associated with the <b>Anima/Animus</b> archetype is
+It appears that the function attitude most likely associated with your
+<b>Hero/Heroine</b> archetype is <b>${bestHero}</b>, while the function attitude
+most likely associated with your <b>Anima/Animus</b> archetype is
 <b>${bestAnima}</b>.
 </p>
 
@@ -249,12 +249,12 @@ Your highest Hero function (<b>${bestHero}</b>) corresponds to the expected oppo
 `
 : `
 <p>
-⚠️ <b>Your results are not fully consistent.</b><br>
+⚠️ <b>Your results are not fully internally consistent.</b><br>
 Your highest Hero function (<b>${bestHero}</b>) would ordinarily be expected to pair with <b>${opposite[bestHero]}</b> as the Anima/Animus function, but your responses instead produced <b>${bestAnima}</b> as the strongest Anima score.
 </p>
 
 <p>
-This does <b>not</b> necessarily mean your result is incorrect. It may indicate a more differentiated personality, mixed preferences, ambiguity between two function-attitudes, or simply that additional questions would be required for a clearer assessment.
+This does <b>not</b> necessarily mean your result is incorrect. It may indicate a more differentiated personality, mixed preferences, ambiguity between two function-attitudes, or simply (most likely case) that additional questions would be required for a clearer assessment.
 </p>
 `
 }
