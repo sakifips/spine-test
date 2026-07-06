@@ -46,7 +46,7 @@ type="radio"
 name="q${q.id}"
 value="${i}">
 
-${String.fromCharCode(65+i)}.
+${Str
 ${option.text}
 
 </label>
