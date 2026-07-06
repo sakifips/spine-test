@@ -129,7 +129,7 @@ NiH:2
 },
 
 {
-text:"You're one of the most dependable people I know.I could always count on you. ",
+text:"You are one of the most dependable people I know.I could always count on you. ",
 scores:{
 SiA:5,
 SiH:2
