@@ -45,10 +45,7 @@ html+=`
 type="radio"
 name="q${q.id}"
 value="${i}">
-
-${Str
 ${option.text}
-
 </label>
 `;
 
