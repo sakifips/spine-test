@@ -50,7 +50,7 @@ FiH:5
 },
 
 {
-text:"My ability to understand, articulate and parse arguments.",
+text:"My ability to understand, articulate and parse information or arguments.",
 scores:{
 TiH:5
 }
@@ -121,7 +121,7 @@ text:"Which compliment would almost feel too good to believe?",
 options:[
 
 {
-text:"You have remarkable insight. You grasp the core of things effortlessly.",
+text:"You have remarkable insights! You seem to be able to grasp the core of things effortlessly.",
 scores:{
 NiA:5,
 NiH:2
@@ -129,7 +129,7 @@ NiH:2
 },
 
 {
-text:"You're one of the most dependable people I know.",
+text:"You're one of the most dependable people I know.I could always count on you. ",
 scores:{
 SiA:5,
 SiH:2
@@ -137,7 +137,7 @@ SiH:2
 },
 
 {
-text:"You have an incredible presence and people naturally feel comfortable around you.",
+text:"You have an incredible and beautiful presence and i feel so comfortable around you!",
 scores:{
 SeA:5,
 SeH:2
@@ -145,7 +145,7 @@ SeH:2
 },
 
 {
-text:"Your ideas are amazingly original and connect things nobody else sees.",
+text:"You amaze me with your outside the box ideas! You can connect and intertwine stuff to create something profound!",
 scores:{
 NeA:5,
 NeH:2
@@ -179,7 +179,7 @@ NiA:5
 },
 
 {
-text:"Failing to act when the moment demanded it.",
+text:"Failing to act/be decisive when the moment demanded it.",
 scores:{
 SeA:5
 }
@@ -243,7 +243,7 @@ text:"Which failure feels the most humiliating?",
 options:[
 
 {
-text:"When you do something that personally feels inappropriate or unacceptable to you.",
+text:"When you do something that feels inappropriate or unacceptable to you.",
 scores:{
 FiH:2,
 FiA:5
@@ -285,28 +285,28 @@ text:"What process feels most natural, effortless, and life-giving? Please read 
 options:[
 
 {
-text:"Grasping whether something or someone resonates with me and evaluating its personal value.",
+text:"Grasping that something or someone vibes or doesn’t vibe with me and evaluating how much that thing or person is valuable for me at that given time",
 scores:{
 FiH:5
 }
 },
 
 {
-text:"Grasping subtle differences between my understanding and someone else's understanding.",
+text:"Grasping that somebody’s understanding of something is similar or different than mine and being able to articulate in my own head the subtle differences between our understanding of the said thing",
 scores:{
 TiH:5
 }
 },
 
 {
-text:"Recognizing inefficient methods and naturally improving or guiding them.",
+text:"Grasping that somebody’s reasoning or methodology is not very practical or time friendly or efficient and being able to modify it for them or help/guide them through it",
 scores:{
 TeH:5
 }
 },
 
 {
-text:"Recognizing people's needs and whether expressing those needs is appropriate in a given context.",
+text:"Grasping what somebody’s needs are and evaluating whether it’d be appropriate or inappropriate of them to express those needs at that given environment at that given time ",
 scores:{
 FeH:5
 }
@@ -898,7 +898,480 @@ NeA:7
 
 ]
 
+},
+  {
+id:25,
+
+text:"Which statement feels most like a betrayal of yourself?",
+
+options:[
+
+{
+text:"I abandoned what mattered to me because it was inconvenient.",
+scores:{
+FiH:5,
+FiA:3
+}
+},
+
+{
+text:"I accepted an explanation I didn't actually believe.",
+scores:{
+TiH:5,
+TiA:3
+}
+},
+
+{
+text:"I knew what needed to be done but never followed through.",
+scores:{
+TeH:5,
+TeA:3
+}
+},
+
+{
+text:"I knowingly damaged a relationship that could have been repaired.",
+scores:{
+FeH:5,
+FeA:3
+}
 }
 
-];
+]
+
+},
+
+{
+id:26,
+
+text:"What makes the future feel safe to you?",
+
+options:[
+
+{
+text:"Believing there is an underlying direction, even if I can't yet explain it.",
+scores:{
+NiH:6
+}
+},
+
+{
+text:"Trusting that I'll handle whatever actually happens.",
+scores:{
+SeH:6
+}
+},
+
+{
+text:"Knowing I can rely on familiar methods that have worked before.",
+scores:{
+SiH:6
+}
+},
+
+{
+text:"Knowing there will always be another possibility to explore.",
+scores:{
+NeH:6
+}
+}
+
+]
+
+},
+
+{
+id:27,
+
+text:"When encountering a new person, piece of information, event or idea, what instinctively happens first?",
+
+options:[
+
+{
+text:"I almost immediately begin sensing whether it has personal significance or worth to me, even before I can explain why.",
+scores:{
+FiH:1
+}
+},
+
+{
+text:"I instinctively begin noticing how it fits into the existing social atmosphere and what kind of response or interaction it naturally calls for.",
+scores:{
+FeH:1
+}
+},
+
+{
+text:"I instinctively begin examining how it fits together conceptually and whether its underlying reasoning is internally coherent.",
+scores:{
+TiH:1
+}
+},
+
+{
+text:"I instinctively begin asking how it could be used, organized, or made effective in the real world.",
+scores:{
+TeH:1
+}
+}
+
+]
+
+},
+
+{
+id:28,
+
+text:"What mental operation feels so automatic that you often don't notice yourself doing it?",
+
+options:[
+
+{
+text:"Quietly reorganizing definitions until everything fits together without contradiction.",
+scores:{
+TiH:5
+}
+},
+
+{
+text:"Quietly assigning personal significance or value to what I'm observing before I consciously realize I've done so.",
+scores:{
+FiH:5
+}
+},
+
+{
+text:"Quietly tracking how people's reactions are changing and adjusting my understanding of what their needs are",
+scores:{
+FeH:5
+}
+},
+
+{
+text:"Quietly reorganizing information into procedures or methods that would produce better practical results.",
+scores:{
+TeH:5
+}
+}
+
+]
+
+},
+
+{
+id:29,
+
+text:"When somebody explains how they accomplish something, what naturally grabs your attention?",
+
+options:[
+
+{
+text:"Whether the process could be reorganized into a more efficient or reliable method.",
+scores:{
+TeH:6
+}
+},
+
+{
+text:"Whether each step actually follows logically from the previous one.",
+scores:{
+TiH:6
+}
+},
+
+{
+text:"Whether the approach respects the people involved and fits the interpersonal context appropriately.",
+scores:{
+FeH:6
+}
+},
+
+{
+text:"Whether the method aligns with what seems genuinely worthwhile or meaningful to pursue.",
+scores:{
+FiH:6
+}
+}
+
+]
+
+},
+
+{
+id:30,
+
+text:"During conversation, what information do you find yourself monitoring almost automatically?",
+
+options:[
+
+{
+text:"Whether people's emotional expressions fit the situation and how the interaction could become more hospitable for all the people involved.",
+scores:{
+FeH:5
+}
+},
+
+{
+text:"Whether what people are saying aligns with what genuinely seems valuable or sincere.",
+scores:{
+FiH:5
+}
+},
+
+{
+text:"Whether the reasoning being presented is internally consistent.",
+scores:{
+TiH:5
+}
+},
+
+{
+text:"Whether the discussion is actually moving toward a useful or productive outcome.",
+scores:{
+TeH:5
+}
+}
+
+]
+
+},
+
+{
+id:31,
+
+text:"After learning many disconnected facts, what tends to happen without deliberate effort?",
+
+options:[
+
+{
+text:"They gradually collapse into one underlying interpretation that seems to organize all of them.",
+scores:{
+NiH:6
+}
+},
+
+{
+text:"They naturally branch into many additional ideas, analogies, and unexplored possibilities.",
+scores:{
+NeH:6
+}
+},
+
+{
+text:"They become incorporated into a stable body of knowledge that I can reliably recall later.",
+scores:{
+SiH:6
+}
+},
+
+{
+text:"They become increasingly vivid as concrete examples and observable realities rather than abstract concepts.",
+scores:{
+SeH:6
+}
+}
+
+]
+
+},
+
+{
+id:32,
+
+text:"When encountering a new idea, what does your mind naturally do?",
+
+options:[
+
+{
+text:"It immediately branches into several related possibilities, analogies, or unexplored directions.",
+scores:{
+NeH:5
+}
+},
+
+{
+text:"It gradually converges toward a single interpretation that explains what the idea is fundamentally pointing toward.",
+scores:{
+NiH:5
+}
+},
+
+{
+text:"It automatically compares the idea against things I've previously learned or experienced.",
+scores:{
+SiH:5
+}
+},
+
+{
+text:"It immediately makes me notice concrete examples or situations where the idea could be directly observed.",
+scores:{
+SeH:5,
+TeH:2
+}
+}
+
+]
+
+},
+
+{
+id:33,
+
+text:"When learning something unfamiliar, what makes it finally feel understood?",
+
+options:[
+
+{
+text:"When it fits into a stable framework I know I can reliably reproduce later.",
+scores:{
+SiH:5,
+TiH:3,
+TeH:1
+}
+},
+
+{
+text:"When I can clearly see the broader pattern or underlying principle that organizes it.",
+scores:{
+NiH:5
+}
+},
+
+{
+text:"When I can directly observe or experience it in reality for myself.",
+scores:{
+SeH:5
+}
+},
+
+{
+text:"When I can freely connect it to many different ideas and contexts beyond where I first encountered it.",
+scores:{
+NeH:5
+}
+}
+
+]
+
+},
+
+{
+id:34,
+
+text:"When entering a completely unfamiliar environment, what happens first?",
+
+options:[
+
+{
+text:"My attention is captured by what is concretely happening around me before I begin interpreting it.",
+scores:{
+SeH:1
+}
+},
+
+{
+text:"I begin forming an overall impression of where events seem to be leading beneath the surface.",
+scores:{
+NiH:1
+}
+},
+
+{
+text:"I begin noticing familiar details that remind me of previous places or experiences.",
+scores:{
+SiH:1
+}
+},
+
+{
+text:"My mind immediately begins imagining different possibilities for what might happen there.",
+scores:{
+NeH:1
+}
+}
+
+]
+
+},
+
+{
+id:35,
+
+text:"Which ability in other people most makes you think, 'I wish my mind naturally worked like that'?",
+
+options:[
+
+{
+text:"They effortlessly recognize where everything is ultimately heading…even if it seems like spiritual vague bullshit sometimes",
+scores:{
+NiA:6
+}
+},
+
+{
+text:"They effortlessly connect or combine things I never would have considered to be similar…even though it seems like they pull it outta their ass sometimes",
+scores:{
+NeA:6
+}
+},
+
+{
+text:"They effortlessly immerse themselves in the immediate situation….even though they seem like mindless attention whores sometimes",
+scores:{
+SeA:6
+}
+},
+
+{
+text:"They can effortlessly remember and rely upon what has consistently worked before….even though they seem like risk-avoidant bland sheep for it sometimes",
+scores:{
+SiA:6
+}
+}
+
+]
+
+},
+
+{
+id:36,
+
+text:"Which kind of person are you most likely to admire because they effortlessly do something you struggle with?",
+
+options:[
+
+{
+text:"Someone who always seems certain about what they personally value.",
+scores:{
+FiA:5
+}
+},
+
+{
+text:"Someone whose explanations are internally coherent no matter how deeply they're questioned.",
+scores:{
+TiA:5
+}
+},
+
+{
+text:"Someone who instinctively knows how to make complicated situations function.",
+scores:{
+TeA:5
+}
+},
+
+{
+text:"Someone who naturally understands how people feel and responds appropriately.",
+scores:{
+FeA:5
+}
+}
+
+]
+
+}
+  ];
   
