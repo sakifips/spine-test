@@ -126,3 +126,71 @@ updateProgress();
 }
 
 };
+submitBtn.onclick=function(){
+
+const answers={};
+
+for(let q of questions){
+
+const selected=document.querySelector(
+`input[name="q${q.id}"]:checked`
+);
+
+if(!selected){
+
+alert("Please answer every question.");
+
+return;
+
+}
+
+answers[q.id]=parseInt(selected.value);
+
+}
+
+// Reset scores
+
+for(let key in scores){
+scores[key]=0;
+}
+
+// Calculate
+
+questions.forEach(q=>{
+
+const answer=answers[q.id];
+
+const option=q.options[answer];
+
+if(option.effects){
+
+option.effects.forEach(effect=>{
+
+scores[effect.stat]+=effect.value;
+
+});
+
+}
+
+});
+
+showResults();
+
+};
+function showResults(){
+
+let html="<h2>Your Scores</h2>";
+
+for(let key in scores){
+
+html+=`<p>${key}: ${scores[key]}</p>`;
+
+}
+
+quiz.innerHTML=html;
+
+document.querySelector(".navigation").style.display="none";
+
+document.querySelector(".progressSection").style.display="none";
+
+}
