@@ -69,6 +69,24 @@ ${option.text}
 card.innerHTML=html;
 
 quiz.appendChild(card);
+  card.querySelectorAll("input").forEach(input=>{
+
+input.addEventListener("change",function(){
+
+const qid="Q"+questions[index].id;
+
+if(currentAnswers[qid]!==undefined &&
+currentAnswers[qid]!=this.value){
+
+answerChanges[qid]=(answerChanges[qid]||0)+1;
+
+}
+
+currentAnswers[qid]=this.value;
+
+});
+
+});
 
 });
 
@@ -207,6 +225,12 @@ questionTimes["Q"+questions[current].id]=
 (questionTimes["Q"+questions[current].id]||0)+lastTime;
 
 const totalQuizTime=Math.round((Date.now()-quizStartTime)/1000);
+
+sendAnalytics(
+answers,
+totalQuizTime
+);
+
 showResults();
 
 };
@@ -308,3 +332,37 @@ document.querySelector(".navigation").style.display="none";
 document.querySelector(".progressSection").style.display="none";
 
 }
+function sendAnalytics(answers,totalQuizTime){
+
+fetch("https://script.google.com/macros/s/AKfycbxqWSeh198z32o808J6qJfgCxLLu4Xs2ptpj9PXvfpEwGw6XvUw54L2aadeV5dGnuZB/exec",{
+
+method:"POST",
+
+headers:{
+"Content-Type":"application/json"
+},
+
+body:JSON.stringify({
+
+timestamp:new Date().toLocaleString(),
+
+answers:answers,
+
+scores:scores,
+
+questionTimes:questionTimes,
+
+answerChanges:answerChanges,
+
+previousCount:previousCount,
+
+totalQuizTime:totalQuizTime
+
+})
+
+})
+
+.catch(err=>console.log(err));
+
+}
+
