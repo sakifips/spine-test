@@ -121,7 +121,14 @@ return;
 
 }
 
+const timeSpent=Math.round((Date.now()-questionStartTime)/1000);
+
+questionTimes["Q"+questions[current].id]=
+(questionTimes["Q"+questions[current].id]||0)+timeSpent;
+
 current++;
+
+questionStartTime=Date.now();
 
 updateProgress();
 
@@ -131,7 +138,16 @@ previousBtn.onclick=function(){
 
 if(current>0){
 
+previousCount++;
+
+const timeSpent=Math.round((Date.now()-questionStartTime)/1000);
+
+questionTimes["Q"+questions[current].id]=
+(questionTimes["Q"+questions[current].id]||0)+timeSpent;
+
 current--;
+
+questionStartTime=Date.now();
 
 updateProgress();
 
@@ -185,7 +201,12 @@ scores[stat]+=option.scores[stat];
 }
 
 });
+const lastTime=Math.round((Date.now()-questionStartTime)/1000);
 
+questionTimes["Q"+questions[current].id]=
+(questionTimes["Q"+questions[current].id]||0)+lastTime;
+
+const totalQuizTime=Math.round((Date.now()-quizStartTime)/1000);
 showResults();
 
 };
