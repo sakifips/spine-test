@@ -12,6 +12,21 @@ SeH:0,SeA:0
 };
 
 let current=0;
+// ---------- Analytics ----------
+
+const quizStartTime = Date.now();
+
+let questionStartTime = Date.now();
+
+const questionTimes = {};
+
+const currentAnswers = {};
+
+const answerChanges = {};
+
+let previousCount = 0;
+
+const longPauses = {};
 
 const quiz=document.getElementById("quiz");
 const nextBtn=document.getElementById("nextBtn");
