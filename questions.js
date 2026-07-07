@@ -6,7 +6,7 @@ const questions = [
 
     options: [
       {
-        text: "When someone invalidates my real life experiences or when they falsely accuse me of making up anecdotes which are not being rooted in reality",
+        text: "When someone invalidates my real life experiences or when they falsely accuse me of making up anecdotes that are not rooted in reality",
         scores: {
           SiA: 5
         }
