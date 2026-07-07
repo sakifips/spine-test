@@ -56,7 +56,7 @@ const questions = [
       },
 
       {
-        text: "My sense of direction and ability of find underlying symbolisms and give meanings to patterns",
+        text: "My sense of direction and ability of finding underlying symbolisms and giving meanings to patterns",
         scores: {
           NiH: 5
         }
@@ -622,7 +622,7 @@ const questions = [
       },
 
       {
-        text: "The fact that I’m not as attentive or dutiful as I aspire to be towards certain things",
+        text: "My inability to be as attentive or dutiful as I aspire to be towards certain things and situations. I am often irresponsible about my duties and promises to others as i either forget them or slither out of them due to perceived inconvenience. ",
         scores: {
           SiA: 9
         }
