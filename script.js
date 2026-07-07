@@ -241,7 +241,7 @@ consistent
 ? `
 <p>
 ✅ <b>Your results are internally consistent.</b><br>
-Your highest Hero function (<b>${bestHero}</b>) corresponds to the expected opposite Anima/Animus function (<b>${bestAnima}</b>). This suggests that your responses are coherent with the Hero-Anima polarity predicted by the model.
+Your highest Hero function (<b>${bestHero}</b>) corresponds to the expected opposite Anima/Animus function (<b>${bestAnima}</b>). This suggests that your responses are coherent with the polarity predicted by the model.
 </p>
 `
 : `
@@ -251,7 +251,7 @@ Your highest Hero function (<b>${bestHero}</b>) would ordinarily be expected to 
 </p>
 
 <p>
-This does <b>not</b> necessarily mean your result is incorrect. It may indicate a more differentiated personality, mixed preferences, ambiguity between two function-attitudes, or simply (most likely case) that additional questions would be required for a clearer assessment.
+This does <b>not</b> necessarily mean your result is incorrect. It may indicate a more differentiated personality, mixed preferences, ambiguity between two function-attitudes, or simply (most likely case) that additional or better quality questions would be required for a clearer assessment.
 </p>
 `
 }
