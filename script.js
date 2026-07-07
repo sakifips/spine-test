@@ -1,3 +1,8 @@
+const supabase = window.supabase.createClient(
+  "https://jhygzdiuziavujmsxmqf.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImpoeWd6ZGl1emlhdnVqbXN4bXFmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODM0MjMzNDYsImV4cCI6MjA5ODk5OTM0Nn0.C7r0wlVAkdP5-A-xLHCrZTquWTVmDVXiH1V6NzQMP6A"
+);
+
 // ---------- Scores ----------
 
 let scores={
@@ -332,37 +337,36 @@ document.querySelector(".navigation").style.display="none";
 document.querySelector(".progressSection").style.display="none";
 
 }
-function sendAnalytics(answers,totalQuizTime){
+async function sendAnalytics(answers,totalQuizTime){
 
-fetch("https://script.google.com/macros/s/AKfycbxqWSeh198z32o808J6qJfgCxLLu4Xs2ptpj9PXvfpEwGw6XvUw54L2aadeV5dGnuZB/exec",{
-
-method:"POST",
-
-headers:{
-"Content-Type":"application/json"
-},
-
-body:JSON.stringify({
-
-timestamp:new Date().toLocaleString(),
+const { error } = await supabase
+.from("responses")
+.insert([{
 
 answers:answers,
 
 scores:scores,
 
-questionTimes:questionTimes,
+question_times:questionTimes,
 
-answerChanges:answerChanges,
+answer_changes:answerChanges,
 
-previousCount:previousCount,
+previous_count:previousCount,
 
-totalQuizTime:totalQuizTime
+total_quiz_time:totalQuizTime
 
-})
+}]);
 
-})
+if(error){
 
-.catch(err=>console.log(err));
+console.error(error);
+
+alert(error.message);
+
+}else{
+
+console.log("Analytics saved!");
 
 }
 
+}
